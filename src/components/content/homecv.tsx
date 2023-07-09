@@ -33,9 +33,9 @@ const HomeCV = () => {
                         "Freelancer",
                         2000, // wait 1s before replacing "Mice" with "Hamsters"
                         "UI/UX Designer",
-                        3000,
+                        2000,
                         "Web Developer",
-                        3000,
+                        2000,
                       ]}
                       wrapper="span"
                       speed={50}
