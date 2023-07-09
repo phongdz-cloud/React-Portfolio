@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const HomeCV = () => {
   return (
@@ -20,12 +21,27 @@ const HomeCV = () => {
                 </div>
                 <div className="name_holder">
                   <h3>
-                    Alan <span>Michaelis</span>
+                    HO HOAI <span>PHONG</span>
                   </h3>
                 </div>
                 <div className="text_typing">
                   <p>
-                    I'm a <span className="arlo_tm_animation_text_word"></span>
+                    I'm a&nbsp;
+                    <TypeAnimation
+                      sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        "Freelancer",
+                        2000, // wait 1s before replacing "Mice" with "Hamsters"
+                        "UI/UX Designer",
+                        3000,
+                        "Web Developer",
+                        3000,
+                      ]}
+                      wrapper="span"
+                      speed={50}
+                      //   style={{ fontSize: "2em", display: "inline-block" }}
+                      repeat={Infinity}
+                    />
                   </p>
                 </div>
               </div>
